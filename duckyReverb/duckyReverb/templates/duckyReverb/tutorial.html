@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DuckyReverb</title>
+    <link href="{% static 'css/about.css' %}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/duck.png' %}"/>
+    
+  </head>
+  <body>
+	<div class="title">
+        <a href="{% url 'home' %}"><img class="mainImage" src="{% static 'images/duck.gif' %}" alt="logo" ></a>
+        <h1>Tutorial</h1>
+
+    </div>
+    <div>
+        <h1>Spotify Tutorial</h1>
+        <video width='70%' height='30%' controls>
+            <source src="{% static 'videos/spotifytut.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> 
+
+          
+    </div>
+
+    <div>
+        <h1>Youtube Tutorial</h1>
+        <video width='70%' height='30%' controls>
+            <source src="{% static 'videos/youtubetut.mp4' %}" type="video/mp4">
+          Your browser does not support the video tag.
+          </video> 
+
+          
+    </div>
+
+    <p3>Song Used: https://www.youtube.com/watch?v=8hpnGBnkRiM</p3>
+  </body>
+</html>
+
+

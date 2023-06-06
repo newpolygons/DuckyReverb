@@ -1,0 +1,125 @@
+{% load static %}
+{% load sass_tags %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TQH2JFL3FB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-TQH2JFL3FB');
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ducky Reverb</title>
+    <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="{% sass_src 'css/home.scss' %}" rel="stylesheet" type="text/css" />
+    
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/duck.png' %}"/>
+    
+  </head>
+  <body>
+      
+    <div class="title">
+        <img class="mainImage" src="{% static 'images/duck.png' %}" alt="logo" width="400" height="400">
+        <h1>Ducky Reverb</h1>
+
+    </div>
+
+    <form action="{% url 'home' %}"  method="post">
+    {% csrf_token %}
+    <div class="card">
+      <h2><img class="icon" aria-hidden="true"  src="{% static 'images/spotify.png' %}" ></img>Spotify</h2>
+      <label class="input">
+        <input class="input__field" type="text" name="link" placeholder=" " />
+        <span class="input__label">Song Link Here</span>
+      </label>
+      <p>Set the speed of the song, the more you move right the slower.</p>
+      
+      <div class="slidecontainer">
+        <input type="range" min="1" name="speed" max="5" value="3" class="slider" id="myRange">
+      </div>
+      <div class="button-group">
+        <button type="submit" >Generate</button>
+        
+      </div>
+    </div>
+
+
+
+    </form>
+
+
+    <form action="{% url 'home' %}"  method="post">
+      {% csrf_token %}
+      <div class="card">
+        <h2><img class="icon" aria-hidden="true"  src="{% static 'images/youtubeicon.png' %}" ></img>Youtube</h2>
+        <label class="input">
+          <input class="input__field" type="text" name="link" placeholder=" " />
+          <span class="input__label">Song Link Here</span>
+        </label>
+        <p>Set the speed of the song, the more you move right the slower.</p>
+        
+        <div class="slidecontainer">
+          <input type="range" min="1" name="speed" max="5" value="3" class="slider" id="myRange">
+        </div>
+        <div class="button-group">
+          <button type="submit" >Generate</button>
+          
+        </div>
+      </div>
+  
+  
+  
+      </form>
+
+      <form action="{% url 'home' %}"  method="post">
+        {% csrf_token %}
+        <div class="card">
+          <h2><img class="icon" aria-hidden="true"  src="{% static 'images/soundcloud.png' %}" ></img>Soundcloud</h2>
+          <label class="input">
+            <input class="input__field" type="text" name="link" placeholder=" " />
+            <span class="input__label">Song Link Here</span>
+          </label>
+          <p>Set the speed of the song, the more you move right the slower.</p>
+          
+          <div class="slidecontainer">
+            <input type="range" min="1" name="speed" max="5" value="3" class="slider" id="myRange">
+          </div>
+          <div class="button-group">
+            <button type="submit" >Generate</button>
+            
+          </div>
+        </div>
+    
+    
+    
+        </form>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+    <symbol id="icon-coffee" viewBox="0 0 20 20">
+      <title>icon-coffee</title>
+      <path fill="currentColor" d="M15,17H14V9h3a3,3,0,0,1,3,3h0A5,5,0,0,1,15,17Zm1-6v3.83A3,3,0,0,0,18,12a1,1,0,0,0-1-1Z"/>
+      <rect fill="currentColor" x="1" y="7" width="15" height="12" rx="3" ry="3"/>
+      <path fill="var(--color-accent)" d="M7.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,0,1-1.79.89Z"/>
+      <path fill="var(--color-accent)" d="M3.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,1,1-1.79.89Z"/>
+      <path fill="var(--color-accent)" d="M11.07,5.42a5.45,5.45,0,0,1,0-4.85,1,1,0,0,1,1.79.89,3.44,3.44,0,0,0,0,3.06,1,1,0,1,1-1.79.89Z"/>
+    </symbol>
+  </svg>
+
+  
+  <div id="wrapper">
+    <div id="first"><a href="{% url 'about' %}" >About</a></div>
+    <div id="second"><a href="{% url 'tutorial' %}">Tutorial</a></div>
+  </div>
+  
+  
+  </body>
+</html>

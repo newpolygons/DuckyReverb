@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ducky Reverb</title>
+    <link href="{% static 'css/about.css' %}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/duck.png' %}"/>
+  </head>
+  <body>
+	<div class="title">
+        <a href="{% url 'home' %}"><img class="mainImage" src="{% static 'images/duck.gif' %}" alt="logo" ></a>
+        <h1>About</h1>
+
+    </div>
+
+    <h2>Q: How do I get back to the home page?</h2>
+    <p>Click the dancing duck.</p>
+    
+    <h2>Q: What does this do?</h2>
+    <p>Slows and reverbs songs</p>
+    
+
+    <h2>Q: Why is my song not downloading?</h2>
+    <p>Give it more time</p>
+
+    <h2>Q: What is the max song length?</h2>
+    <p> 12 mins :)</p>
+
+    <h2>Q: Who made this?</h2>
+    <a href="https://www.twitter.com/newpolygons">My Twitter :)</a> 
+
+    <h2>Q: Do you own any of the music I uploaded to this site?</h2>
+    <p>NO of course not.</p>
+
+  </body>
+</html>

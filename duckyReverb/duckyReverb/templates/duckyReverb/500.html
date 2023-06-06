@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DuckyReverb</title>
+    <link href="{% static 'css/about.css' %}" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/duck.png' %}"/>
+    
+  </head>
+  <body>
+	<div class="title">
+        <a href="{% url 'home' %}"><img class="mainImage" src="{% static 'images/duck.gif' %}" alt="logo" ></a>
+        <h1>Error</h1>
+
+    </div>
+        <h1>Click the duck to go back home.</h1>
+        <h2>The song may have been over 12mins or it was not found :(</h2>
+        <h2>If you are sure you are using the right link try again :)</h2>
+
+  </body>
+</html>
+
+
