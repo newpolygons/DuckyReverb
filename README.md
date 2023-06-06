@@ -5,7 +5,11 @@ A Django web application which allows you to slow and reverb songs from major mu
 
 
 
-https://github.com/newpolygons/DuckyReverb/assets/30321729/800a0d50-948d-40b8-a3ad-6c106c34033c
+
+
+
+https://github.com/newpolygons/DuckyReverb/assets/30321729/8709351d-5c20-4153-af73-479336bae11e
+
 
 
 
