@@ -2,7 +2,11 @@
 A Django web application which allows you to slow and reverb songs from major music providers.
 
 
-https://github.com/newpolygons/DuckyReverb/assets/30321729/1b1fc03d-59cd-4888-add6-584b32089f9f
+
+
+
+https://github.com/newpolygons/DuckyReverb/assets/30321729/800a0d50-948d-40b8-a3ad-6c106c34033c
+
 
 
 # Notice 
